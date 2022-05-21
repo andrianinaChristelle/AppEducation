@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/imageView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+          <ImageButton
+              android:id="@+id/idChiffre"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:foregroundGravity="center"
+              app:srcCompat="@drawable/chiffre"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"
+              />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:layout_centerHorizontal="true"
+              android:text="Chiffre"
+              android:layout_marginLeft="60dp"
+              android:layout_marginTop="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+          <ImageButton
+              android:id="@+id/idLettre"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              app:srcCompat="@drawable/lettres"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"/>
+
+          <TextView
+              android:id="@+id/Lettre"
+              android:layout_width="176dp"
+              android:layout_height="0dp"
+              android:layout_below="@+id/idLettre"
+
+              android:layout_weight="1"
+              android:text="Lettre"
+              android:textColor="@color/purple_200"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="50dp"/>
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+          <ImageButton
+              android:id="@+id/idAnimaux"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              app:srcCompat="@drawable/animaux1"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"/>
+
+          <TextView
+              android:id="@+id/textView4"
+              android:layout_width="192dp"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="animaux"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="50dp"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+          <ImageButton
+              android:id="@+id/idVegetable"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              app:srcCompat="@drawable/vegetable"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"/>
+
+          <TextView
+              android:id="@+id/textView3"
+              android:layout_width="176dp"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="Fruit et Legume"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="40dp"/>
+        </LinearLayout>
+
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>
