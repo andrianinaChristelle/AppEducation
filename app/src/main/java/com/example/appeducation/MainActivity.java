@@ -18,14 +18,17 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.appeducation.ui.home.HomeFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
+
 public class MainActivity extends AppCompatActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         ActionBar var10000 = this.getSupportActionBar();
         if (var10000 != null) {
             var10000.hide();

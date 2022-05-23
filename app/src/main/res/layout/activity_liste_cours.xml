@@ -7,11 +7,17 @@
     android:layout_alignParentBottom="false"
     android:orientation="vertical"
     tools:context=".ListeCours">
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
     <EditText
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/video_view"
         android:layout_margin="10dp"
         android:background="#30ffffff"
         android:drawableLeft="@drawable/search"
@@ -27,15 +33,5 @@
         android:layout_height="wrap_content">
 
     </ListView>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/container"
-        android:layout_above="@+id/bottom_navigation"/>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/setting"/>
+
 </LinearLayout>

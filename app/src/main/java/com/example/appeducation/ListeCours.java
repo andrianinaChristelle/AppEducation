@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -14,8 +15,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import com.example.appeducation.ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -29,35 +32,28 @@ public class ListeCours extends AppCompatActivity {
     String nDescription[]={"Chiffre Description" , "animaux Description" , "Lettre Decsription" , "Vegetable description"};
     int images[] ={R.drawable.chiffre,R.drawable.animaux1,R.drawable.lettres,R.drawable.vegetable};
 
-    BottomNavigationView bottomNavigationView ;
-    HomeFragment homeFragment = new HomeFragment();
-    Settings settings = new Settings();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_liste_cours);
 
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
 
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected( MenuItem item) {
-                switch(item.getItemId()){
-                    case R.id.home:  getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
-                     return true;
-                    case R.id.settings: getSupportFragmentManager().beginTransaction().replace(R.id.container,settings).commit();
-                    return true;
-
-                }
-
-                return false;
-            }
-        });
 
         listeView = findViewById(R.id.listView);
         MyAdapter adapter =new MyAdapter(this, nTitle , nDescription,images);
         listeView.setAdapter(adapter);
+
+        VideoView videoView = findViewById(R.id.video_view);
+        String videoPath = "android.resource://"+ getPackageName() + "/" + R.raw.video;
+        Uri uri = Uri.parse(videoPath);
+        videoView.setVideoURI(uri);
+        MediaController mediaController = new MediaController(this);
+        videoView.setMediaController(mediaController);
+        mediaController.setAnchorView(videoView);
+
+
+
 
         listeView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -77,6 +73,8 @@ public class ListeCours extends AppCompatActivity {
             }
         });
     }
+
+
     class MyAdapter extends ArrayAdapter<String>{
         Context context ;
         String rTitle[];

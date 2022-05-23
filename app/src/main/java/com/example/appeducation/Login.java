@@ -26,7 +26,7 @@ public class Login extends AppCompatActivity {
         });
     }
     public void openActivity2(){
-        Intent intent = new Intent(this, ListeCours.class);
+        Intent intent = new Intent(this, Activity2.class);
         name = (TextView) findViewById(R.id.username);
         password = (TextView) findViewById(R.id.password);
         String nom = name.getText().toString();
