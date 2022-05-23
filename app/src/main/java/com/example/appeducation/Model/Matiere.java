@@ -12,4 +12,8 @@ public class Matiere {
     public String getName() {
         return name;
     }
+
+    public Matiere(String name) {
+        this.name = name;
+    }
 }

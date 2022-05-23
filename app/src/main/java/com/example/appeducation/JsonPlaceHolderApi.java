@@ -17,6 +17,6 @@ public interface JsonPlaceHolderApi {
     @GET("getMatiere")
     Call<List<Matiere>> getMatiere();
 
-//    @POST
-//    createPost(@Body Matiere matiere)
+    @POST("addmatiere")
+    Call<Matiere>createMatiere(@Body Matiere matiere);
 }

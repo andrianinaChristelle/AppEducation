@@ -1,5 +1,6 @@
 package com.example.appeducation;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,7 +14,7 @@ public class Login extends AppCompatActivity {
     private TextView name ;
     private TextView password ;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         button = (Button)findViewById(R.id.loginbtn);
@@ -25,7 +26,7 @@ public class Login extends AppCompatActivity {
         });
     }
     public void openActivity2(){
-        Intent intent = new Intent(this, Activity2.class);
+        Intent intent = new Intent(this, ListeCours.class);
         name = (TextView) findViewById(R.id.username);
         password = (TextView) findViewById(R.id.password);
         String nom = name.getText().toString();

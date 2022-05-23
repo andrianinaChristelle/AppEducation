@@ -23,6 +23,8 @@ public class Activity2 extends AppCompatActivity {
         Log.println(Log.VERBOSE,"Tag",username);
         Toast.makeText(this, username, Toast.LENGTH_SHORT).show();
         System.out.println("nomm"+username);
+
+
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

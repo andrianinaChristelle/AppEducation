@@ -10,14 +10,22 @@
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/drawable/ic_launcher_background.xml" value="0.242" />
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/activity_2.xml" value="0.264" />
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/activity_cours.xml" value="0.1265625" />
-        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/activity_login.xml" value="0.2604166666666667" />
+        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/activity_lecon.xml" value="0.1" />
+        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/activity_liste_cours.xml" value="0.23097826086956522" />
+        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/activity_main.xml" value="0.1407766990291262" />
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/activity_test.xml" value="0.27447916666666666" />
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/app_bar_test.xml" value="0.27447916666666666" />
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/content_test.xml" value="0.27447916666666666" />
+        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/fragment_home_fragment.xml" value="0.1" />
+        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/fragment_slideshow.xml" value="0.27447916666666666" />
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/nav_header_test.xml" value="0.27447916666666666" />
+        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/layout/row.xml" value="0.1" />
+        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/menu/activity_main_drawer.xml" value="0.1265625" />
         <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/menu/main_menu.xml" value="0.2" />
+        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/menu/setting.xml" value="0.1265625" />
+        <entry key="..\:/fenarana/M1/android/Education/AppEducation/app/src/main/res/menu/test.xml" value="0.1265625" />
       </map>
     </option>
   </component>
